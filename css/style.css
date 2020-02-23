@@ -1,4 +1,38 @@
 body {
     font-family: 'OpenSans';
-   
+}
+a {
+    text-decoration: none ; 
+}
+h1 {
+    font-size: 80px;
+    color: #192b59;
+    font-weight: 600;
+}
+.nav {
+    font-size: 12px;
+    color: #6e7ea9;
+    font-weight: 700;
+    text-transform: uppercase
+}
+.btn-free a{
+    color: #fff;
+    font-weight: 400;
+    background-color: aqua;
+}
+.grid h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #192b59;
+}
+.grid h2 span {
+    font-size: 14px;
+    color: #1085e4;
+    font-weight: 800;
+    display: block;
+}
+.grid-item h3 {
+    font-size: 20px;
+    color: #192b59;
+    font-weight: 600;
 }
