@@ -1,5 +1,8 @@
 body {
     font-family: 'OpenSans';
+    font-size: 16px;
+    line-height: 26px;
+    color: #7581a1;
 }
 a {
     text-decoration: none ; 
@@ -35,4 +38,9 @@ h1 {
     font-size: 20px;
     color: #192b59;
     font-weight: 600;
+}
+.grid-item a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1085e4;
 }
