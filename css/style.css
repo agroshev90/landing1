@@ -71,6 +71,10 @@ h1 {
     color: #fff;
 }
 
+.content-app .h2-title {
+    margin-bottom: 36px;
+}
+
 .wrap {
     max-width: 1110px;
     margin: 0 auto ;
@@ -175,6 +179,7 @@ h1 {
     border: 1px solid #1085e4;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: .3s;
 }
 
 .btn-primary:hover {
@@ -192,6 +197,7 @@ h1 {
     border: 1px solid #cbdbe8; 
     padding: 20px 40px;
     border-radius: 30px;
+    transition: .3s;
 }
 
 .btn-secondary:hover {
@@ -209,6 +215,7 @@ h1 {
     font-weight: 700;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: .3s;
 
 }
 
@@ -216,6 +223,7 @@ h1 {
     letter-spacing: 1.7px;
     padding: 22px 56px;
     font-weight: 400; 
+    transition: .3s;
 }
 .subscribe {
     
@@ -237,11 +245,20 @@ h1 {
                          "e f g"
                          "e h h";
     max-width: 1110px;
-    margin: 0 auto;                      
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;     
+    margin: 75px auto 75px;              
 }
 
 .grid-title {
     grid-area: a;
+}
+
+
+.grid-item {
+    text-align: center;
+    box-shadow: 0 0 10px #f3f3f3;
+    
 }
 
 .grid-item-1 {
@@ -285,13 +302,6 @@ h1 {
     display: block;
 }
 
-.grid-item {
-    text-align: center;
-    box-shadow: 0 0 5px #f5f5f5;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
 .grid-item h3 {
     font-size: 20px;
     color: #192b59;
@@ -308,7 +318,7 @@ h1 {
 .icon {
     background-repeat: no-repeat;
     display: block;
-    margin: 0 auto 36px;
+    margin: 30px auto 36px;
 }
 
 .greed-icon-1 {
@@ -346,6 +356,67 @@ h1 {
     height: 88px;
 }
 
+.page-settings-icon {
+    background-image: url(../image/setting-icon.png);
+    background-repeat: no-repeat;
+    background-position: -20px 0;
+    width: 115px;
+    height: 87px;
+}
+
+.page-software-list {
+    margin-top: 30px;
+    height: 329px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+ 
+.page-software .h2-title, .page-analytics .h2-title, .page-stat2 .h2-title   {
+    width: 766px;
+    margin-top: 12px;
+    margin-bottom: 26px ;
+}
+
+.page-software-list dt{
+    font-weight: 700;
+    color: #5a6789;
+    margin-bottom: 10px;
+}
+
+.page-software-list dd{
+    margin-left: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.page-software-flex > div {
+    flex-basis: 55%;
+}
+
+.page-software-flex {
+    display: flex ;
+    justify-content: flex-end;
+}
+
+.image-software {
+    background-image: url(../image/page-software-image1.png);
+    display: block;
+    height: 910px;
+    width: 953px;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    position: absolute;
+    left: -44px;
+    bottom: 0px;
+}
+
+.page-software-list::-webkit-scrollbar { width: 4px; height: 4px;}
+.page-software-list::-webkit-scrollbar-button {  background-color: #1085e4; }
+.page-software-list::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
+.page-software-list::-webkit-scrollbar-thumb { height: 50; background-color: #1085e4; border-radius: 10px;}
+
+
 .list-stat {
     display: flex;
     justify-content: space-around;
@@ -368,6 +439,82 @@ h1 {
     font-size: 60px;
     letter-spacing: 0;
     margin-bottom: 23px;
+}
+
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c4d2dd;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    letter-spacing: 3.5 px;
+}
+
+.page-app-link {
+    padding: 0;
+    list-style-type: none;
+    margin-left: -7px;
+}
+
+.page-app-link>li {
+    display: inline-block;
+}
+
+.page-app-link>li>a {
+    background-image: url(../image/app-icon.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 185px;
+    height: 77px;
+}
+
+.page-app-link>li>a.page-app-link-android {
+    background-position: 0 0 ;  
+}
+
+.page-app-link>li>a.page-app-link-apple {
+    background-position: -191px 0 ;   
+}
+
+.content-app {
+    width: 55%;
+}
+
+.video-app{
+    position: absolute;
+    top: -61px;
+    right: -172px;
+}
+
+.flex-analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-analytics>div {
+    flex-basis: 53%
+    
+}
+
+.page-analytics-text {
+    margin-bottom: 54px;
+}
+
+.flex-stat2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-stat2-text {
+    margin-bottom: 54px;
+}
+
+.flex-stat2>div {
+    flex-basis: 53%
+    
 }
 
 .screen {
@@ -503,6 +650,51 @@ flex-basis: 49%;
 flex-basis: 49%;
 }
 
+.box-clients {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 63px;
+}
+
+.box-clients-item {
+    background-color: #fff;
+    padding: 21px 42px;
+    border-radius: 10px;
+    flex-basis: 31.5%;
+    box-sizing: border-box;
+    font-size: 14px;
+    box-shadow: 0 0 10px #f3f3f3;
+}
+
+.box-clients-item .name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    margin-bottom: 0;
+    line-height: 1.1;
+    letter-spacing: -0.6;
+}
+
+.box-clients-item .position {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1085e4;
+}
+
+.box-clients-item>p {
+    margin-bottom: 3px;
+}
+
+.box-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-info>div {
+    padding: 17px;
+}
 
 /* PAGE */
 
@@ -510,12 +702,14 @@ flex-basis: 49%;
     background-image: url(../image/header-imqge.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 53px 0 330px 0;
     position: relative;
 }
 
 .page-company {
     background-image: url(../image/company-img.png);
+    background-position: center;
     padding: 106px 0 99px;
 }
 
@@ -526,6 +720,66 @@ flex-basis: 49%;
 
 .page-stat { 
     padding: 116px 0 96px 0;
+}
+
+.page-app {
+    padding:69px 0 82px 0;
+}
+
+.page-app .wrap {
+    position: relative;
+}
+
+.page-analytics {
+    background-image: url(../image/Home6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 117px 0 137px 0;
+}
+
+.page-stat2 {
+    background-image: url(../image/page-stat2-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px 0 137px 0;
+    background-position: center;
+  
+
+}
+
+.page-clients {
+    position: relative;
+    margin-top: 120px;
+    padding: 43px 0 0 0;
+}
+
+.page-clients::before {
+    content: '';
+    display: block;
+    background-image: url(../image/page-clients-bg.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+
+.page-clients .title-40  {
+    color: #fff;
+}
+
+.page-clients .title-40 span {
+    color: #85c8ff;
+}
+
+.page-software {
+   padding: 109px 0 156px 0;
+   position: relative;
+   overflow: hidden;
+
 }
 
 .page-screen, .page-plan {
