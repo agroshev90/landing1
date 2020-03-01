@@ -480,6 +480,7 @@ h1 {
 
 .content-app {
     width: 55%;
+    position: relative;
 }
 
 .video-app{
@@ -640,9 +641,9 @@ flex-basis: 49%;
 }
 
 .subscribe-user input::-webkit-input-placeholder {columns: #b1c3ee;;}
-.subscribe-user input::-moz-placeholder          {color: #b1c3ee;}/* Firefox 19+ */
-.subscribe-user input:-moz-placeholder           {color: #b1c3ee;}/* Firefox 18- */
-.subscribe-user input:-ms-input-placeholder      {color: #b1c3ee;}
+.subscribe-user input::-moz-placeholder {color: #b1c3ee;}/* Firefox 19+ */
+.subscribe-user input:-moz-placeholder {color: #b1c3ee;}/* Firefox 18- */
+.subscribe-user input:-ms-input-placeholder {color: #b1c3ee;}
 
 .subscribe .btn-primary {
     position: absolute;
@@ -828,8 +829,147 @@ flex-basis: 49%;
     justify-content: space-between;
     padding: 0;
     margin: 0;
-
 }
+
+.object-circle {
+    display: block;
+    position: absolute;
+    background-image: url(../image/circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    bottom: -363px;
+    width: 413px;
+    height: 758px;
+}
+
+.object-romb {
+    display: block;
+    position: absolute;
+    background-image: url(../image/romb.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+    top: -198px;
+    width: 569px;
+    height: 661px;
+}
+
+.page-app .intro {
+    color: rgba(0, 0, 0, 0.04);
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.contact-form {
+     display: flex;
+     flex-direction: column;
+     margin-top: 51px;
+}
+
+.contact-form input, .contact-form textarea {
+    font-size: 14px;
+    border: 2px solid #dce4ec;
+    padding: 25px 80px 25px 37px;
+    border-radius: 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form-item {
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.contact-form-item .contact-form-message {
+    margin-bottom: 34px;
+   
+}
+
+.contact-form-item::after {
+    content: "";
+    display: block;
+    right: 42px;
+    position: absolute;
+}
+
+.contact-form-message textarea {
+    min-height: 161px;
+    resize: none;
+}
+
+.contact-form-name::after {
+    background-image: url(../image/user.png);
+    width: 13px;
+    height: 15px;
+    top: calc(50% - 7px);
+    background-repeat: no-repeat;
+}
+
+.contact-form-email::after {
+    background-image: url(../image/envelope.png);
+    width: 14px;
+    height: 11px;
+    top: calc(50% - 7px);
+}
+
+.contact-form-message::after {
+    background-image: url(../image/pen.png);
+    width: 14px;
+    height: 15px;
+    top:  29px;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 1015px;
+    align-items: center;
+}
+
+.flex-form>div {
+    flex-basis: 47%;
+}
+
+.flex-form img {
+    margin-right: 60px;
+}
+
+.contact-form .btn-primary {
+    position: relative;
+    padding: 22px 40px 22px 60px;
+    letter-spacing: 2px;
+    max-width: 232px;
+}
+
+.contact-form .btn-primary::before {
+    content: "";
+    background-image: url(../image/submit-btn.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 13px;
+    left: 54px;
+    top: calc(50% - 6px);
+}
+
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {columns: #8995b3;}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {color: #8995b3;}/* Firefox 19+ */
+.contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {color: #8995b3;}/* Firefox 18- */
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {color: #8995b3;}
 
 /* PAGE */
 
@@ -854,7 +994,7 @@ flex-basis: 49%;
 }
 
 .page-stat { 
-    padding: 116px 0 96px 0;
+    position: relative;
 }
 
 .page-app {
@@ -953,5 +1093,13 @@ flex-basis: 49%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 82px 0 20px 0;
+    padding: 82px 0 121px 0;
+}
+
+.page-form {
+    background-image: url(../image/Home11.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 82px 0 121px 0;
 }
