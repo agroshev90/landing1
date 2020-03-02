@@ -78,6 +78,8 @@ h1 {
 .wrap {
     max-width: 1110px;
     margin: 0 auto ;
+    padding-left: 15px;
+    padding-right: 15px;
     
 }
 
@@ -131,37 +133,55 @@ h1 {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     max-width: 1110px;
-    
-}
-
-.list-company-item {
-    display: block ;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .company-one {
-    background-image: url(../image/bg_1.png);
     flex-basis: 198px;
-    height: 58px;
 }
 
 .company-two {
-    background-image: url(../image/bg_2.png);
     flex-basis: 200px;
-    height: 69px;
 }
 
 .company-three {
-    background-image: url(../image/bg_3.png);
     flex-basis: 201px;
-    height: 47px;
 }
 
 .company-four {
-    background-image: url(../image/bg_4.png);
     flex-basis: 200px;
+}
+.list-company-item span{
+    display: block ;
+    
+}
+
+.company-one span{
+    background-image: url(../image/bg_1.png);
+    width: 198px;
+    height: 58px;
+}
+
+.company-two span{
+    background-image: url(../image/bg_2.png);
+    width: 200px;
+    height: 69px;
+}
+
+.company-three span{
+    background-image: url(../image/bg_3.png);
+    width: 201px;
+    height: 47px;
+}
+
+.company-four span{
+    background-image: url(../image/bg_4.png);
+    width: 200px;
     height: 69px;
 }
 
@@ -230,6 +250,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .subscribe-text {
@@ -247,7 +268,9 @@ h1 {
     max-width: 1110px;
     grid-gap: 35px;
     grid-template-columns: 1fr 1fr 1fr;     
-    margin: 75px auto 75px;              
+    margin: 75px auto 75px;
+    padding-left: 15px;
+    padding-right: 15px;              
 }
 
 .grid-title {
@@ -522,6 +545,8 @@ h1 {
 .screen {
     margin-top: 70px;
     margin-bottom: -7px;
+    width: 100%;
+    max-width: 1288px;
 }
 
 .box-price-item {
@@ -1000,7 +1025,6 @@ flex-basis: 49%;
     text-transform: uppercase;
 } 
 
-
 /* PAGE */
 
 .page-header {
@@ -1016,6 +1040,8 @@ flex-basis: 49%;
     background-image: url(../image/company-img.png);
     background-position: center;
     padding: 106px 0 99px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .page-stat, .page-screen  {
@@ -1140,4 +1166,50 @@ flex-basis: 49%;
     background-position: center;
     background-repeat: no-repeat;
     padding: 30px 0 30px 0;
+}
+
+/* Media */
+
+@media (max-width:1050px) {
+    .list-company-item {
+        flex-basis: 50%;
+        margin-bottom: 50px;
+    }
+    .list-company-item span {
+        margin: 0 auto;
+    }
+    .page-company {
+        padding: 50x 0 20px;
+    }
+    .grid {
+        grid-template-areas: "a a"
+                             "b c"
+                             "d e" 
+                             "f g "
+                             "h h";
+       grid-template-columns: 1fr 1fr;              
+    }
+    .grid h2 {
+        text-align: center;
+    }
+    .grid span {
+        margin-bottom: 10px;
+    }
+    .subscribe {
+        flex-direction: column-reverse;
+    }
+    .subscribe-child {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .subscribe img {
+            margin: 0 auto 49px;
+            max-width: 170px ;
+    }
+    .subscribe-text {
+        margin: 0 auto 30px;
+    }
+    .page-subscribe {
+        padding: 50x 0 65px;
+    }
 }
