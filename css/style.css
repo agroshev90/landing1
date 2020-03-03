@@ -108,8 +108,22 @@ h1 {
     display: flex;
 }
 
+.nav-modal {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 .nav > li{
     padding: 0 20px;
+}
+
+.nav > li:last-child {
+    padding-right: 0;
 }
 
 .nav-item {
@@ -185,6 +199,22 @@ h1 {
     height: 69px;
 }
 
+.btn-menu {
+    border: none;
+    display: none;
+    background-color: transparent;
+}
+
+.btn-menu:focus {
+    outline: none;
+}
+
+.btn-menu svg {
+    width: 35px;
+    height: 35px;
+    fill: #192b59;
+}
+
 .btn-group a + a{
     margin-left: 15px;
 }
@@ -245,6 +275,56 @@ h1 {
     font-weight: 400; 
     transition: .3s;
 }
+
+.btn-close {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    font-size: 30px;
+    right: 20px;
+    top: 15px;
+    color: #192b59;
+    opacity: 0.2;
+    transition: 0.3s;
+}
+
+.btn-close:hover{
+    opacity: 1;
+}
+
+.btn-close:focus {
+    outline: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    top: 30px;
+    left: 0;
+    right: 0;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    padding: 30px 15px 45px 15px;
+    box-shadow: 0 5px 6px #f4f4f4;
+    border-radius: 10px;
+
+}
+
+ul.nav-modal>li {
+    margin-bottom: 15px;
+}  
+
+ul.nav-modal li:last-child {
+    margin-top: 50px;
+}
+
 .subscribe {
     
     display: flex;
@@ -1169,6 +1249,45 @@ flex-basis: 49%;
 }
 
 /* Media */
+@media (max-width:1500px) {
+    .sqreen-img {
+        background-size: cover;
+        height: 579px;
+        width: 50%;
+        top: 258px;
+    }
+    .video-app {
+        top: -23px;
+        right: 0;
+    }
+    .video-app img {
+        width: 482px;
+    }
+}
+
+@media (max-width:1100px) {
+    .nav, .sqreen-img {
+        display: none;
+    }
+    .btn-menu {
+        display: block;
+    }
+    h1 {
+        margin-bottom: 65px;
+        text-align: center;
+        margin: 0 auto 45px;
+    }
+    .btn-group {
+        display: flex;
+        justify-content: center;
+    }
+    .box-header {
+        margin-bottom: 100px;
+    }
+    .page-header {
+        padding: 50px 0 150px 0;
+    }
+}
 
 @media (max-width:1050px) {
     .list-company-item {
@@ -1212,4 +1331,24 @@ flex-basis: 49%;
     .page-subscribe {
         padding: 50x 0 65px;
     }
+}
+@media (max-width:600px) {
+    h1 {
+        font-size: 40px;
+        margin: 0 auto 30px;
+    }
+}
+
+@media (max-width:501px) {
+  .btn-primary, .btn-secondary {
+      padding: 15px 40px;
+      font-size: 11px; 
+  }
+  .btn-group {
+      flex-direction: column;
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 10px;
+      max-width: 300px;
+  }
 }

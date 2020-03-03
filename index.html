@@ -38,6 +38,7 @@
                 <li><a href="" class="nav-item">team</a></li>   
                 <li><a class="btn-primary btn-free" href="">free trail</a></li>                           
             </ul>
+            <button type="button" class="btn-menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384"><path d="M0 277.333h384V320H0zM0 170.667h384v42.667H0zM0 64h384v42.667H0z"/></svg></button>
         </div>
         <div class="wrap">
             <h1>Best Software Landingpage</h1>
@@ -366,6 +367,18 @@
         <li><a href="http://" target="_blank"><img src="./image/linkedin.png" alt=""></a></li>
     </ul>              
   </div>
+  <div class="modal">
+      <button type="button" class="btn-close"><span>&times;</span></button>
+    <ul class="nav-modal">
+        <li><a href="" class="nav-item">Home</a></li>
+        <li><a href="" class="nav-item">Features</a></li>
+        <li><a href="" class="nav-item">Video</a></li>
+        <li><a href="" class="nav-item">Screens</a></li>
+        <li><a href="" class="nav-item">Pricing</a></li>
+        <li><a href="" class="nav-item">team</a></li>   
+        <li><a class="btn-primary btn-free" href="">free trail</a></li>                           
+    </ul> 
+  </div>
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -383,7 +396,14 @@
       $(".btn-thomas").click(function(){
         $(".btn-thomas").hide();
         $(".socials-thomas").fadeIn(1000);
+       
       });
+      $(".btn-menu").click(function(){
+            $(".modal").show() 
+        })
+        $(".btn-close").click(function(){
+            $(".modal").hide() 
+        })
     });
     </script>
 </body>
